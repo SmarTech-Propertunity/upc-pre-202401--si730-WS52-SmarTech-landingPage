@@ -159,3 +159,127 @@ header{
     flex-direction: column;
     max-width: 800px;
 }
+
+.suscriptions{
+    background-color: #15074E;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.suscriptionstitle{
+    margin-bottom: 4rem;
+    color: hsl(0, 0%, 100%);
+        font-size: 2em;
+    font-weight: 800; 
+    font-style: italic;
+}
+.suscriptionsheader{
+    color: hsl(0, 0%, 100%);
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.suscriptionstoggle{
+    margin-top: 2rem;
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    align-items: center;
+}
+
+.suscriptionstoggle--btn{
+    margin: 0 1rem;
+}
+
+.checkbox{
+    display: none;
+}
+
+.sub{
+    background: hsl(0, 0%, 0%);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 1.6rem;
+    width: 3.3rem;
+    border-radius: 1.6rem;
+    padding: 0.3rem;
+}
+
+.circle{
+    background-color: #fff;
+    height: 1.4rem;
+    width: 1.4rem;
+    border-radius: 50%;
+}
+
+.checkbox:checked + .sub{
+    justify-content: flex-end;
+}
+
+.suscriptionscards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.suscriptionscard{
+    background-color: #ecca0d;
+    color: hsl(0, 0%, 100%);
+    border-radius: 1rem;
+}
+
+.active{
+    background: hsl(252, 71%, 40%);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+ul{
+    padding-right: 2rem;
+    margin: 2.6rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+}
+
+ul li{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+ul li.price{
+    font: 3rem;
+    color: hsl(0, 0%, 100%);
+    padding-bottom: 2rem;
+}
+
+.shadow{
+    box-shadow: -5px 5px 15px 1px rgba(0,0,0,0.1);
+}
+
+.premium{
+    background-color: #ff0000;
+    box-shadow: -5px 5px 15px 1px rgba(0,0,0,0.1);
+}
+
+.card.active .price{
+    color: #fff;
+}
