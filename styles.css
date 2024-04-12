@@ -376,3 +376,64 @@ ul li.price{
     font-weight: 500;
     font-style: italic;
 }
+
+.join{
+    background-image: URL("./images/contactanos_background.jpg");
+    padding: 60px 0;
+    background-size: 100%;
+    position: relative;
+    color: #fff;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.joincontainer{
+    background-color: #15074E;
+    padding: 3.5em 2em;
+    border-radius: 15px;
+    text-align: center;
+    color: #fff;
+}
+
+.jointitle{
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.joinparagraph{
+    line-height: 1.5;
+    margin-bottom: 1em;
+}
+
+.joinform{
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.5em;
+}
+
+.joininput, textarea{
+    font: inherit;
+    padding: 1em 1.4em;
+    border-radius: 30px;
+    border: none;
+    width: 80%;
+    align-self: center;
+    outline: none;
+    resize: none;
+}
+
+.joininput--submit{
+    background-image: var(--gradient);
+    color: #fff;
+    font-family: var(--heading-font);
+    font-weight: 700;
+    width: 200px;
+    align-self: center;
+    margin-top: 1rem;
+    cursor: pointer;
+}
