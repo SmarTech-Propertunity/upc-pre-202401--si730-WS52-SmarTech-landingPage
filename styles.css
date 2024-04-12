@@ -6,7 +6,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 :root {
     --cyan-gradient: hsl(28, 83%, 61%);
     --blue-gradient: hsl(10, 94%, 60%);
@@ -219,24 +218,20 @@ header{
     width: 1.4rem;
     border-radius: 50%;
 }
-
 .checkbox:checked + .sub{
     justify-content: flex-end;
 }
-
 .suscriptionscards{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
-
 .suscriptionscard{
     background-color: #ecca0d;
     color: hsl(0, 0%, 100%);
     border-radius: 1rem;
 }
-
 .active{
     background: hsl(252, 71%, 40%);
     color: #fff;
@@ -245,7 +240,6 @@ header{
     transform: scale(1.1);
     z-index: 1;
 }
-
 ul{
     padding-right: 2rem;
     margin: 2.6rem;
@@ -255,7 +249,6 @@ ul{
     align-items: center;
     font-weight: bold;
 }
-
 ul li{
     list-style-type: none;
     display: flex;
@@ -264,22 +257,18 @@ ul li{
     width: 100%;
     padding: 1rem 0;
 }
-
 ul li.price{
     font: 3rem;
     color: hsl(0, 0%, 100%);
     padding-bottom: 2rem;
 }
-
 .shadow{
     box-shadow: -5px 5px 15px 1px rgba(0,0,0,0.1);
 }
-
 .premium{
     background-color: #ff0000;
     box-shadow: -5px 5px 15px 1px rgba(0,0,0,0.1);
 }
-
 .card.active .price{
     color: #fff;
 }
@@ -294,8 +283,6 @@ ul li.price{
     max-width: 100%;
     height: auto;
   }
-
-
   .testimonyheader {
     color: hsl(0, 0%, 0%);
     font-size: 2em;
