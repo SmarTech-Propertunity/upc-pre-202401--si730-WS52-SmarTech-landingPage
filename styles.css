@@ -42,7 +42,7 @@ header{
     
 }	
 
-.hero{
+.menu{
     background-image: url("./images/background_inicio.jpg");
     max-width: 100%;
     max-height: 100%;
@@ -86,31 +86,35 @@ header{
     text-decoration: none;
 }
 
-.hero__main{
+.nav__link:hover{
+    text-decoration: underline;
+}
+
+.menu__main{
     text-align: center;
 }
 
-.hero__img{
+.menu__img{
     display: block;
     width: 100%;
     max-width: 500px;
     margin: 0 auto;
 }
 
-.hero__title{
+.menu__title{
     font-family: var(--heading-font);
     margin: 2.5em 0 1em;
     
 }
 
-.hero__paragraph{
+.menu__paragraph{
     line-height: 2;
     margin-bottom: 1.5em;
     font-size: 24px;
     bottom: 1rem;
 }
 
-.hero__cta{
+.menu__cta{
     display: inline-block;
     width: 250px;
     padding: 15px 0;
@@ -122,6 +126,10 @@ header{
     border-radius: 30px;
     position: relative;
     bottom: 1rem;
+}
+
+.menu__cta:hover{
+   zoom: 120%;
 }
 
 .cards{
@@ -221,24 +229,27 @@ header{
 .checkbox:checked + .sub{
     justify-content: flex-end;
 }
+
 .suscriptions__cards{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+
 }
+
 .suscriptions__card{
     background-color: #ecca0d;
     color: hsl(0, 0%, 100%);
     border-radius: 1rem;
+    
 }
 .active{
     background: hsl(252, 71%, 40%);
     color: #fff;
     display: flex;
     align-items: center;
-    transform: scale(1.1);
-    z-index: 1;
+  
 }
 ul{
     padding-right: 2rem;
@@ -262,9 +273,7 @@ ul li.price{
     color: hsl(0, 0%, 100%);
     padding-bottom: 2rem;
 }
-.shadow{
-    box-shadow: -5px 5px 15px 1px rgba(0,0,0,0.1);
-}
+
 .premium{
     background-color: #ff0000;
     box-shadow: -5px 5px 15px 1px rgba(0,0,0,0.1);
@@ -272,6 +281,7 @@ ul li.price{
 .card.active .price{
     color: #fff;
 }
+
 .testimony {
     position: relative; 
     align-items: center;
@@ -283,6 +293,7 @@ ul li.price{
     max-width: 100%;
     height: auto;
   }
+
   .testimony__header {
     color: hsl(0, 0%, 0%);
     font-size: 2em;
@@ -343,7 +354,7 @@ ul li.price{
     background: transparent;
     border: 2px solid #F4F4F4;
     color: hsl(0, 0%, 100%);
-
+   
 }
 
 .card.active .bottom-bar{
@@ -369,7 +380,7 @@ ul li.price{
     padding: 60px 0;
     background-size: 100%;
     position: relative;
-    color: #fff;
+    color: #fff;   
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -441,7 +452,6 @@ ul li.price{
 }
 
 .footer__contact{
-    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -449,12 +459,16 @@ ul li.price{
 }
 
 .footer__direction{
-    color: #000;
-    text-decoration: none;
     display: flex;
-    gap: 1em;
-    align-items: flex-start;
+    align-items: center;
+    margin-bottom: 5px;
 }
+
+.footer__direction img {
+    margin-right: 5px;
+    width: 20px;
+    height: auto;
+  }
 
 .footer__direction--second{
     margin: 1em 0;
@@ -478,25 +492,13 @@ ul li.price{
     text-decoration: underline;
 }
 
-.footer__social{
-    margin: 0 auto;
-    margin-top: 4em;
-    width: max-content;
-    display: grid;
-    grid-auto-rows: max-content;
-    grid-auto-flow: column;
-    gap: 1em;
-}
-
-.footer__smedia{
-    display: inline-flex;
-    width: 40px;
-    height: 40px;
-    border: 1px solid #fff;
-    align-items: center;
+.footer__socialMedia {
+    display: flex;
     justify-content: center;
-    border-radius: 50%;
-}
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 10px; 
+  }
 
 .footer__media{
     display: block;
@@ -506,10 +508,67 @@ ul li.price{
     height: 25px;
 }
 
+.footer__socialicon{
+    width: 30px; 
+    height: auto;
+    margin-right: 10px;
+    
+}
+
+@media screen and (max-width: 768px) {
+    .nav__links {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      display: none;
+    }
+  
+    .nav__link {
+      padding: 10px;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .menu__toggle {
+      display: block;
+      background: none;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+      color: white; 
+        margin-left: auto;
+    }
+  
+    .menu__main {
+      text-align: center;
+    }
+  
+    .menu__cta {
+      display: block;
+      margin: 20px auto;
+    }
+
+    .nav__links.show {
+        display: flex;
+      }
+  }
+
+  
 @media (min-width:768px) {
 
+    .menu__toggle {
+        display: none;
+      }
+    
+      .nav__links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    
 
-    .hero__title{
+    .menu__title{
         font-size: 3rem;
     }
 
@@ -574,4 +633,9 @@ ul li.price{
         margin: 0 0 1em;
     }
 
+    .footer__socialMedia {
+        margin-top: 5px;
+        
+      }
 }
+

@@ -16,3 +16,11 @@ form.addEventListener('submit', (e) => {
   }
 });
 
+const menuToggle = document.querySelector('.menu__toggle');
+const menuLinks = document.querySelector('.nav__links');
+
+menuToggle.addEventListener('click', function() {
+  const ariaExpanded = this.getAttribute('aria-expanded') === 'true' || false;
+  this.setAttribute('aria-expanded', !ariaExpanded);
+  menuLinks.classList.toggle('show'); 
+});

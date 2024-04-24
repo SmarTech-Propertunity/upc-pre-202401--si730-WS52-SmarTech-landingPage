@@ -12,55 +12,60 @@
 </head>
 
 <body>
-  <header class="hero">
-    <nav class="nav container">
-      <h1>Propertunity</h1>
-        <div class="nav__links">
+
+    <header class="menu" role="banner">
+      <nav class="nav container" role="navigation">
+        <h1>Propertunity</h1>
+        <div class="nav__links" id="menu__links">
           <a href="#inicio" class="nav__link">Inicio</a>
           <a href="#nosotros" class="nav__link">Nosotros</a>
           <a href="#Suscripciones" class="nav__link">Suscripciones</a>
           <a href="#Funciones" class="nav__link">Funciones</a>
           <a href="#Testimonios" class="nav__link">Testimonios</a>
           <a href="#Contactanos" class="nav__link">Contáctanos</a>
-    </nav>
+        </div>
+        <button class="menu__toggle" aria-expanded="false" aria-controls="menu__links">☰</button>
+      </nav>
+      
+      <section class="menu__main container" role="region" aria-label="menu Section">
+        
+        <h1 class="menu__title">¡Descubre tu hogar ideal con nosotros! Explora nuestra selección de propiedades y encuentra el lugar perfecto para ti!</h1>
     
-    <section class="hero__main container">
-      <img src="" class="hero__img">
+        <p class="menu__paragraph">
+          Una aplicación única en el mercado que ofrece una interfaz completa y adecuada para la publicacion, y busqueda de propiedades inmobiliarias.
+        </p>
+    
+        <a href="#" class="menu__cta">Comenzar ahora</a>
+      </section>
+    </header>
 
-      <h1 class="hero__title">¡Descubre tu hogar ideal con nosotros! ¡Explora nuestra selección de propiedades y encuentra el lugar perfecto para ti!</h1>
-
-      <p class="hero__paragraph">
-        Una aplicación única en el mercado que ofrece una interfaz completa y adecuada para la publicación, y búsqueda de propiedades inmobiliarias.
-      </p>
-
-      <a href="#" class="hero__cta">Comenzar ahora</a>
-    </section>
-  </header>
-
-  <main class="main"> 
-    <section class="cards container cards--"  id="nosotros">
+  <main class="main" role="main">
+    
+    <section class="cards container cards--" role="region" id="nosotros" aria-label="nosotros">
 
       <article class="cards__item">
-        <img src="images/aboutus.svg " alt="access" class="cards__img"> 
+
+        <img src="images/aboutus.svg " alt="about us" class="cards__img"> 
         <h3 class="cards__title">Sobre Nosotros</h3>
         <p class="cards__paragraph">En SmartTech, nos dedicamos a ofrecer productos de calidad que brinden seguridad, precisión y comodidad a nuestros usuarios durante el proceso de adquisición de propiedades y bienes raíces. Nuestra aplicación estrella, Propertunity, utiliza programación avanzada para proporcionar una experiencia integral en la búsqueda y evaluación de propiedades inmobiliarias. Con una interfaz intuitiva, los usuarios pueden explorar una amplia gama de listados de propiedades, acceder a información detallada y actualizada, y beneficiarse de tutoriales y secciones de aprendizaje para mejorar su comprensión del mercado inmobiliario y reducir la informalidad.</p>
       </article>
-
+            
       <article class="cards__item">
-          <img src="images/mision.svg" alt="access" class="cards__img">
+          <img src="images/mision.svg" alt="mision" class="cards__img">
           <h3 class="cards__title">Mision</h3>
           <p class="cards__paragraph">Nuestra misión es ofrecer a quienes buscan adquirir una propiedad en Perú una aplicación web nacional que asegure una experiencia positiva, otorgándoles un mayor control sobre sus decisiones y evitando posibles inconvenientes o discrepancias durante todo el proceso de búsqueda.</p>
       </article>
-
+      
       <article class="cards__item">
-          <img src="images/vision.svg" alt="access" class="cards__img">
+          <img src="images/vision.svg" alt="vision" class="cards__img">
           <h3 class="cards__title">Vision</h3>
           <p class="cards__paragraph">Nuestro vision es unir las mejores tecnologías y productos del mercado suramericano para fortalecer el crecimiento de un sector inmobiliario más seguro, formal y confiable. También nos esforzamos por fomentar una sociedad con un mayor entendimiento en cuanto a la financiación y compra de propiedades.</p>
       </article>
     </section>
 
-    <section class="suscriptions" id="Suscripciones">
 
+    <section class="suscriptions" role="region" id="Suscripciones" aria-label="suscripciones">
+     
       <h2 class="suscriptions__title">Suscripciones</h2>
       <div class="suscriptions__cards">
         <div class="suscriptions__card shadow">
@@ -71,7 +76,7 @@
             <li class="bottom-bar">Visualización Predeterminada</li>
             <li class="bottom-bar">Comunicación Básica</li>
             <li class="bottom-bar">Soporte Limitado</li>
-            <li><button class="btn">Saber más</button></li>
+            <li><button class="btn">Saber más</button></li>   
           </ul>
         </div>
 
@@ -101,10 +106,10 @@
       </div>
     </section>
 
-    <section class="cards container" id="Funciones">
+    <section class="cards container" role="region" id="Funciones" aria-label="Funciones">
 
       <article class="cards__item">
-        <img src="images/icon-access-anywhere.svg" path class="cards__img">
+        <img src="images/icon-access-anywhere.svg" alt="Interfaz de dispositivos" path class="cards__img">
         <h3 class="cards__title">Interfaz detallada y fácil de usar</h3>
         <p class="cards__paragraph">
           Los usuarios disfrutarán de una interfaz que es fácil de entender y de manejar, al mismo tiempo que es intuitiva y atractiva. Además de eso, ofrecemos recursos adicionales de aprendizaje y ayuda, como tutoriales y acceso a información general sobre el tema.
@@ -112,7 +117,7 @@
       </article>
 
       <article class="cards__item">
-        <img src="images/icon-security.svg" path class="cards__img">
+        <img src="images/icon-security.svg" alt="Ícono de información veridica" path class="cards__img">
         <h3 class="cards__title"> Información Detallada y Transparente</h3>
         <p class="cards__paragraph">
           Los usuarios tienen la posibilidad de obtener información exhaustiva acerca de cada propiedad, que abarca imágenes, descripciones, características y datos pertinentes sobre los propietarios o la empresa que la gestiona.
@@ -134,26 +139,26 @@
           Los usuarios de Propertunity tienen acceso privilegiado a una amplia gama de recursos profesionales proporcionados por las empresas asociadas, así como a la valiosa información ofrecida por otros usuarios que también ofrecen bienes raíces en la plataforma.
         </p>
       </article>
-    </section> 
+    </section>  
 
-    <section class ="testimony container" id="Testimonios">
+    <section class ="testimony container" role="region" id="Testimonios" aria-label="Testimonios">
       <div class="testimony__header"><h2>Testimonios</h2></div>
       <article class="testimony__item">
-        <img src="images/testimonio2.jpg" class="testimony__img">
+        <img src="images/testimonio2.jpg" alt="Usuario de la plataforma" class="testimony__img">
         <h3 class="testimony__title">Roberto</h3>
         <p class="testimony__paragraph">
           "Propertunity facilitó encontrar mi hogar ideal con su interfaz intuitiva y opciones de búsqueda. ¡Altamente recomendado para cualquier necesidad inmobiliaria!"
         </p>
       </article>
       <article class="testimony__item">
-        <img src="images/testimonio1.jpg" class="testimony__img">
+        <img src="images/testimonio1.jpg" alt="Usuario de la plataforma" class="testimony__img">
         <h3 class="testimony__title">Sara</h3>
         <p class="testimony__paragraph">
           "Gracias a Propertunity, encontré mi propiedad perfecta de manera eficiente y sin complicaciones. Su sistema de filtrado y detalles claros fueron clave."
         </p>
       </article>
       <article class="testimony__item">
-        <img src="images/testimonio3.jpg" class="testimony__img">
+        <img src="images/testimonio3.jpg" alt="Usuario de la plataforma" class="testimony__img">
         <h3 class="testimony__title">Juan</h3>
         <p class="testimony__paragraph">
           "Propertunity simplificó mi búsqueda de apartamento con notificaciones personalizadas y contacto directo con vendedores. ¡Una herramienta esencial para quienes buscan vivienda!"
@@ -161,7 +166,7 @@
       </article>
     </section>
 
-    <section class="join" >
+    <section class="join" role="region" id="Formulario0" aria-label="Formulario">
       <div class="join__container container">
         <h2 class="join__title"> Contáctanos</h2>
         <p class="join__paragraph">
@@ -176,46 +181,56 @@
       </div>
     </section>
   </main>
-<footer class="footer">
+
+  <footer class="footer" role="contentinfo">
     <section class="footer__container container">
-
       <div class="footer__content">
-
         <h2 class="footer__title">Propertunity</h2>
-
+  
         <div class="footer__contact">
-
-          <a href="#" class="footer__direction footer__direction--second">
-            <img src="images/phone.svg" class="footer__icon">
+          <div class="footer__direction footer__direction--second">
+            <img src="images/phone.svg" alt="Icono de telefono" class="footer__icon">
             +51 999 999 999
-          </a>
+          </div>
           
-          <a href="#" class="footer__direction">
-            <img src="images/email.svg" class="footer__icon">
+          <div class="footer__direction">
+            <img src="images/email.svg" alt="Icono de correo" class="footer__icon">
             propertunity@gmail.com
-          </a>
-
+          </div>
+  
+          <div class="footer__socialMedia">
+            <a href="#" class="footer__socialMedia">
+              <img src="images/x-icon.svg"  alt="Icono de X" class="footer__socialicon">
+            </a>
+  
+            <a href="#" class="footer__socialMedia">
+              <img src="images/facebook-icon.svg"  alt="Icono de facebook" class="footer__socialicon">
+            </a>
+  
+            <a href="#" class="footer__socialMedia">
+              <img src="images/instagram-icon.svg"  alt="Icono de instagram" class="footer__socialicon">
+            </a>
+          </div>
         </div>
-
-        <nav class="footer__nav">
+  
+        <nav class="footer__nav" role="navigation" aria-label="Enlaces adicionales">
           <a href="#" class="footer__link">About Us</a>
           <a href="#" class="footer__link">Jobs</a>
           <a href="#" class="footer__link">Press</a>
           <a href="#" class="footer__link">Blog</a>
         </nav>
-
-        <nav class="footer__nav">
+  
+        <nav class="footer__nav" role="navigation" aria-label="Enlaces legales">
           <a href="#" class="footer__link">Contact Us</a>
           <a href="#" class="footer__link">Terms</a>
           <a href="#" class="footer__link">Privacy</a>
         </nav>
-
       </div>
-      
     </section>
   </footer>
   <script src="script.js" type="text/javascript">
     
   </script>
 </body>
+
 </html>
