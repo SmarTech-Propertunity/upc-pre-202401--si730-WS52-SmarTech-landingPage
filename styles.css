@@ -47,8 +47,8 @@ header{
 
 .menu{
     background-image: url("./images/background_inicio.jpg");
-    max-width: 100%;
-    max-height: 100%;
+    width: auto;
+    height: auto;
     background-size: cover;
     position: relative;
     color: #fff;
