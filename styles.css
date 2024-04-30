@@ -25,6 +25,7 @@ h1{
     font-size: 2em;
     font-weight: 800; 
     font-style: italic;
+    
 }
 
 body{
@@ -48,7 +49,6 @@ header{
 .menu{
     background-image: url("./images/background_inicio.jpg");
     width: auto;
-    height: auto;
     background-size: cover;
     position: relative;
     color: #fff;
@@ -569,7 +569,11 @@ ul li.price{
       width: 100%;
       text-align: center;
     }
-  
+    
+    .menu{
+        height: auto;
+        
+    }
     .menu__toggle {
       display: block;
       background: none;
@@ -607,7 +611,6 @@ ul li.price{
         align-items: center;
       }
     
-
     .menu__title{
         font-size: 3rem;
     }
