@@ -130,7 +130,7 @@ header{
 .menu__title{
     font-family: var(--heading-font);
     margin: 2.5em 0 1em;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .menu__paragraph{
@@ -156,7 +156,7 @@ header{
 }
 
 .menu__cta:hover{
-   zoom: 120%;
+   zoom: 110%;
 }
 
 .cards{
@@ -186,6 +186,7 @@ header{
 .cards__paragraph{
     line-height: 2;
     margin: 10px 5px 15px 20px;
+    padding: 10px;
 }
 
 .cards--{
@@ -350,6 +351,7 @@ ul li.price{
     margin-bottom: 1.5em;
     display: inline-block; 
     position: relative; 
+    text-align: center;
   }
 
 .testimony__item{
@@ -574,7 +576,7 @@ ul li.price{
     /* Ajustes en el tamaño de la imagen en testimonios */
     .testimony__img {
         max-width: 100%;
-        height: auto;
+        
     }
 }
 
@@ -664,7 +666,7 @@ ul li.price{
 @media screen and (min-width: 768px) and (orientation: landscape) {
     .testimony__img {
       max-width: 100%;
-      height: auto;
+      
     }
     header{
         height: 200%;
